@@ -219,13 +219,12 @@ class Inflector {
   /// Inflector.underscore('messageProperties') => 'message_properties'
   /// ```
   static String underscore(String str) {
-    var withSpaces =
-        str
-            .replaceAllMapped(
-              RegExp(r'([a-z])([A-Z])'),
-              (m) => '${m[1]} ${m[2]}',
-            )
-            .toLowerCase();
+    var withSpaces = str
+        .replaceAllMapped(
+          RegExp(r'([a-z])([A-Z])'),
+          (m) => '${m[1]} ${m[2]}',
+        )
+        .toLowerCase();
     var cleaned = withSpaces.replaceAll(RegExp(r'[^0-9a-zA-Z]'), ' ');
     return cleaned.trim().replaceAll(RegExp(r'\s+'), '_');
   }
@@ -400,12 +399,13 @@ class Inflector {
         var ld = parts[i].substring(parts[i].length - 1);
         var suf = 'th';
         if (ltd != '11' && ltd != '12' && ltd != '13') {
-          if (ld == '1')
+          if (ld == '1') {
             suf = 'st';
-          else if (ld == '2')
+          } else if (ld == '2') {
             suf = 'nd';
-          else if (ld == '3')
+          } else if (ld == '3') {
             suf = 'rd';
+          }
         }
         parts[i] = parts[i] + suf;
       }
