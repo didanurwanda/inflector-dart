@@ -1,15 +1,20 @@
 name: inflector_dart
-description: A lightweight Dart utility for smart word transformations – from singular to plural, snake_case to camelCase, and everything in between.
-version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+description: "A lightweight Dart utility for smart word transformations - from singular to plural, snake_case to camelCase, and everything in between."
+version: 1.0.1
+homepage: https://github.com/didanurwanda/inflector-dart
+repository: https://github.com/didanurwanda/inflector-dart
+license: MIT
+
+topics:
+  - camelcase
+  - snakecase
+  - string
+  - inflector
+  - text-processing
 
 environment:
-  sdk: ^3.7.2
-
-# Add regular dependencies here.
-# dependencies
-:
-# path: ^1.8.0
+  sdk: ^3.4.0
+  flutter: ">=3.16.0"
 
 dev_dependencies:
   lints: ^5.0.0
