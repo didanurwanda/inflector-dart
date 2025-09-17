@@ -1,4 +1,4 @@
-# Inflector Dart API Documentation
+# Inflector Dart
 
 A lightweight Dart utility for smart word transformations – from singular to plural, snake_case to camelCase, and everything in between. All methods are `static` and can be called directly on the `Inflector` class, and can also be invoked directly
 
