@@ -3,7 +3,7 @@ name: Dart CI/CD
 on:
   push:
     branches:
-      - main
+      - master
     tags:
       - "v*" # hanya tag yang dimulai dengan "v" misal v1.0.0
   pull_request:
